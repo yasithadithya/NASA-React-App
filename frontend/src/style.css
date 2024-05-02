@@ -1,0 +1,151 @@
+/*default***************************/
+html{
+    font-family: 'Roboto';
+
+}
+
+body{
+    margin: 0;
+    background-image: url('../public/assets/dark.jpeg');
+    background-size: cover;
+    margin: 0;
+    height: 100vh
+}
+
+.btn{
+    border: none;
+}
+
+
+/*nav bar*/
+.nav-link{
+    color: #fff;
+}
+
+/*Hero sections*/
+/*hero home*/
+.hero-section {
+    background-image: url('../public/assets/astro.jpeg');
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    color: #fff;
+}
+
+#hero {
+    padding: 0;
+}
+
+/*Hero video mars*/
+
+video {
+
+    width: 100%;
+    height: auto;
+}
+
+.mars-video-hero{
+    margin-bottom: 50px;
+}
+
+/*h1 mar pic and home*/
+.display-4, .pic, .mars{
+    font-family: 'Orbitron';
+    color: #69359c;
+}
+
+.text-center{
+    font-weight: 800;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.card{
+    margin: auto;
+    border: none;
+    margin-bottom: 20px;
+}
+
+/*3D models*/
+.ar-model{
+    width: 100%;
+    height: 50rem;
+    margin: 10px auto;
+    display: block;
+}
+
+/*modal*/
+.modal-body {
+    background-image: url('../public/assets/dark.jpeg');
+    background-size: cover;
+    color: #ffffff; /* Set the text color */
+}
+
+.modal1 {
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 0;
+    transform: translateX(100%);
+}
+
+.modal-header{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.close {
+    color: #fff;
+    outline: none;
+    background: none;
+
+}
+
+
+
+
+/* Mars page */
+.marsWeather{
+    width:100%;
+    height: 620px;
+}
+.mars-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Display 4 columns */
+    grid-gap: 20px; /* Adjust gap between grid items */
+    margin-top: 20px; /* Add margin to separate from the video */
+  }
+  
+  /* Card styling */
+  .card {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust background color with opacity */
+    background-color: #000000e3;
+    color: #ffffff;
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 10px; /* Optional: Add border radius for rounded corners */
+  }
+  
+  .card img {
+    width: 100%; /* Ensure images fill the card container */
+    height: auto;
+  }
+  
+  @media (max-width: 1200px) {
+    .mars-container {
+      grid-template-columns: repeat(3, 1fr); /* Display 3 columns on smaller screens */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .mars-container {
+      grid-template-columns: repeat(2, 1fr); /* Display 2 columns on even smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .mars-container {
+      grid-template-columns: 1fr; /* Display 1 column on small screens */
+    }
+  }
+  
