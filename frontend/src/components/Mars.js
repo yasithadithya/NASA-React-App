@@ -54,7 +54,7 @@ function Mars() {
                 <ImageListItem key={index}>
                   <img
                     src={photo.img_src}
-                    alt={`Mars Rover Photo ${index} - ${photo.earth_date}`}
+                    alt={`${photo.earth_date}`}
                     loading="lazy"
                   />
                   <ImageListItemBar
