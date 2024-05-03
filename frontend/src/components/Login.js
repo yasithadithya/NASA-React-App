@@ -26,7 +26,7 @@ function Login() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:2024/api/v1/admins/login', { email, password });
+      const response = await axios.post('https://nasa-react-app-backend-api.onrender.com/api/v1/admins/login', { email, password });
       const { data } = response;
       if (data.data) {
         // Token received, login successful, store token and redirect to Home component
