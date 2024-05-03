@@ -1,18 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import '../style.css'; // Import the CSS file for styling
 
 function Index() {
-  useEffect(() => {
-    // Prevent scrolling when the component mounts
-    document.body.style.overflow = 'hidden';
-
-    // Re-enable scrolling when the component unmounts
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
-  }, []);
+  
 
   return (
     <>
