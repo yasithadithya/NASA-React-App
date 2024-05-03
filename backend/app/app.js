@@ -9,7 +9,7 @@ const adminRouter = require('../routes/adminRouter');
 const app = express();
 
 const cors = require('cors');
-app.use(cors({origin:"http://localhost:3000"}));
+app.use(cors({origin:"https://nasa-react-app-af.netlify.app"}));
 
 // Middlewares
 app.use(morgan("dev"));
