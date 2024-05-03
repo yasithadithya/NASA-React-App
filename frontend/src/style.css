@@ -1,84 +1,95 @@
-/*default***************************/
-html{
+/* Default styles */
+html {
     font-family: 'Roboto';
-
 }
 
-body{
+body {
     margin: 0;
     background-image: url('../public/assets/dark.jpeg');
     background-size: cover;
-    margin: 0;
-    height: 100vh
+    height: 100vh; /* Removed duplicate margin: 0; */
 }
 
-.btn{
+.btn {
     border: none;
 }
 
-
-/*nav bar*/
-.nav-link{
+/* Navigation bar */
+.nav-link {
     color: #fff;
 }
 
-/*Hero sections*/
-/*hero home*/
+/* Hero sections */
+/* Hero home */
 .hero-section {
     background-image: url('../public/assets/astro.jpeg');
     background-size: cover;
     margin: 0;
     height: 100vh;
     color: #fff;
+    position: relative; /* Add position relative for overlay positioning */
 }
 
 #hero {
     padding: 0;
 }
 
-/*Hero video mars*/
-
+/* Hero video styles */
 video {
-
     width: 100%;
     height: auto;
+    object-fit: cover; /* Ensure the video covers the entire container */
 }
 
-.mars-video-hero{
-    margin-bottom: 50px;
+/* Overlay styles */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay color with opacity */
+    padding: 5rem; /* Adjust padding as needed */
 }
 
-/*h1 mar pic and home*/
-.display-4, .pic, .mars{
+/* H1 styles */
+.display-4,
+.pic,
+.mars {
     font-family: 'Orbitron';
     color: #69359c;
 }
 
-.text-center{
+.text-center {
     font-weight: 800;
     margin-top: 50px;
     margin-bottom: 30px;
 }
 
-.card{
+.card {
     margin: auto;
     border: none;
     margin-bottom: 20px;
 }
 
-/*3D models*/
-.ar-model{
+/* 3D models */
+.ar-model {
     width: 100%;
     height: 50rem;
     margin: 10px auto;
     display: block;
 }
 
-/*modal*/
+/* Modal */
 .modal-body {
     background-image: url('../public/assets/dark.jpeg');
     background-size: cover;
-    color: #ffffff; /* Set the text color */
+    color: #ffffff;
 }
 
 .modal1 {
@@ -89,7 +100,7 @@ video {
     transform: translateX(100%);
 }
 
-.modal-header{
+.modal-header {
     background-color: #000000;
     color: #ffffff;
 }
@@ -98,54 +109,60 @@ video {
     color: #fff;
     outline: none;
     background: none;
-
 }
-
-
-
 
 /* Mars page */
-.marsWeather{
-    width:100%;
+.marsWeather {
+    width: 100%;
     height: 620px;
 }
+
 .mars-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Display 4 columns */
-    grid-gap: 20px; /* Adjust gap between grid items */
-    margin-top: 20px; /* Add margin to separate from the video */
-  }
-  
-  /* Card styling */
-  .card {
+    grid-template-columns: repeat(4, 1fr);
+    /* Display 4 columns */
+    grid-gap: 20px;
+    /* Adjust gap between grid items */
+    margin-top: 20px;
+    /* Add margin to separate from the video */
+}
+
+/* Card styling */
+.card {
     border: none;
-    background-color: rgba(255, 255, 255, 0.1); /* Adjust background color with opacity */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Adjust background color with opacity */
     background-color: #000000e3;
     color: #ffffff;
-    padding: 20px; /* Adjust padding as needed */
-    border-radius: 10px; /* Optional: Add border radius for rounded corners */
-  }
-  
-  .card img {
-    width: 100%; /* Ensure images fill the card container */
+    padding: 20px;
+    /* Adjust padding as needed */
+    border-radius: 10px;
+    /* Optional: Add border radius for rounded corners */
+}
+
+.card img {
+    width: 100%;
+    /* Ensure images fill the card container */
     height: auto;
-  }
-  
-  @media (max-width: 1200px) {
+}
+
+@media (max-width: 1200px) {
     .mars-container {
-      grid-template-columns: repeat(3, 1fr); /* Display 3 columns on smaller screens */
+        grid-template-columns: repeat(3, 1fr);
+        /* Display 3 columns on smaller screens */
     }
-  }
-  
-  @media (max-width: 992px) {
+}
+
+@media (max-width: 992px) {
     .mars-container {
-      grid-template-columns: repeat(2, 1fr); /* Display 2 columns on even smaller screens */
+        grid-template-columns: repeat(2, 1fr);
+        /* Display 2 columns on even smaller screens */
     }
-  }
-  
-  @media (max-width: 576px) {
+}
+
+@media (max-width: 576px) {
     .mars-container {
-      grid-template-columns: 1fr; /* Display 1 column on small screens */
+        grid-template-columns: 1fr;
+        /* Display 1 column on small screens */
     }
-  }
-  
+}
