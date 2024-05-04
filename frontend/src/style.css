@@ -37,7 +37,7 @@ body {
 /* Hero video styles */
 video {
     width: 100%;
-    height: auto;
+    height: 100vh; /* Set video height to fill the viewport height */
     object-fit: cover; /* Ensure the video covers the entire container */
 }
 
